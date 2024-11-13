@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  prometheus-node-exporter:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/seckin-aktas/helm-charts.git/helm-charts
+    apiVersion: v2
+    appVersion: 1.8.2
+    created: "2024-11-13T13:20:18.811959+03:00"
+    description: A Helm chart for prometheus node-exporter
+    digest: 7a7fff0d791ff1b1bf3c442627d02b77807ab175bbac6aabbc51ec91ab7c7faa
+    home: https://github.com/prometheus/node_exporter/
+    keywords:
+    - node-exporter
+    - prometheus
+    - exporter
+    name: prometheus-node-exporter
+    sources:
+    - https://github.com/prometheus/node_exporter/
+    type: application
+    urls:
+    - https://github.com/seckin-aktas/helm-charts.git/helm-charts/prometheus-node-exporter-4.42.0.tgz
+    version: 4.42.0
+generated: "2024-11-13T13:20:18.810366+03:00"
