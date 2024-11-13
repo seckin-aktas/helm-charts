@@ -5,7 +5,7 @@ entries:
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
         - name: Chart Source
-          url: https://seckin-aktas.github.io/helm-charts/charts
+          url: https://seckin-aktas.github.io/helm-charts/charts/prometheus-node-exporter
     apiVersion: v2
     appVersion: 1.8.2
     created: "2024-11-13T13:20:18.811959+03:00"
@@ -18,7 +18,7 @@ entries:
     - exporter
     name: prometheus-node-exporter
     sources:
-    - https://seckin-aktas.github.io/helm-charts/charts
+    - https://seckin-aktas.github.io/helm-charts/charts/prometheus-node-exporter
     type: application
     urls:
     - https://seckin-aktas.github.io/helm-charts/prometheus-node-exporter-4.42.0.tgz
