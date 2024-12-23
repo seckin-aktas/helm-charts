@@ -51,20 +51,6 @@ spec:
         - name: node-exporter
           image: {{ include "prometheus-node-exporter.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          args:
-            - --path.procfs=/host/proc
-            - --path.sysfs=/host/sys
-            {{- if .Values.hostRootFsMount.enabled }}
-            - --path.rootfs=/host/root
-            {{- if semverCompare ">=1.4.0-0" (coalesce .Values.version .Values.image.tag .Chart.AppVersion) }}
-            - --path.udev.data=/host/root/run/udev/data
-            {{- end }}
-            {{- end }}
-            - --web.listen-address=[$(HOST_IP)]:{{ $servicePort }}
-            {{- with .Values.extraArgs }}
-            {{- toYaml . | nindent 12 }}
-            {{- end }}
-          {{- with .Values.containerSecurityContext }}
           securityContext:
             {{- toYaml . | nindent 12 }}
           {{- end }}
